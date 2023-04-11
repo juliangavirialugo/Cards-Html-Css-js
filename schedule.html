@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+                font-size: 16px;
+                line-height: 1.5;
+            }
+
+            .container {
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+                grid-template-rows: repeat(8, 1fr);
+                gap: 10px;
+                padding: 10px;
+                height: 100vh;
+                box-sizing: border-box;
+            }
+
+            .header {
+                grid-column: 1 / -1;
+                text-align: center;
+                font-size: 24px;
+                font-weight: bold;
+            }
+
+            .weekday {
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .time {
+                text-align: center;
+            }
+
+            .study {
+                background-color: #add8e6;
+                border-radius: 5px;
+                padding: 10px;
+            }
+
+            .break {
+                background-color: #ffdab9;
+                border-radius: 5px;
+                padding: 10px;
+            }
+
+            .rest {
+                background-color: #e6e6fa;
+                border-radius: 5px;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header" style="grid-column: 1 / -1">
+                Scheduling de estudio
+            </div>
+            <div class="weekday" style="grid-column: 1 / 2; grid-row: 2 / 3">
+                Hora
+            </div>
+            <div class="weekday" style="grid-column: 2 / 3; grid-row: 2 / 3">
+                Lunes
+            </div>
+            <div class="weekday" style="grid-column: 3 / 4; grid-row: 2 / 3">
+                Martes
+            </div>
+            <div class="weekday" style="grid-column: 4 / 5; grid-row: 2 / 3">
+                Miércoles
+            </div>
+            <div class="weekday" style="grid-column: 5 / 6; grid-row: 2 / 3">
+                Jueves
+            </div>
+            <div class="weekday" style="grid-column: 6 / 7; grid-row: 2 / 3">
+                Viernes
+            </div>
+            <div class="weekday" style="grid-column: 7 / 8; grid-row: 2 / 3">
+                Fin de semana
+            </div>
+            <div class="time" style="grid-column: 1 / 2; grid-row: 3 / 4">
+                6:00 am
+            </div>
+            <div class="rest" style="grid-column: 2 / 7; grid-row: 3 / 4">
+                Despertar, prepararse para el día, revisar correos y noticias
+                importantes.
+            </div>
+            <div class="time" style="grid-column: 1 / 2; grid-row: 4 / 5">
+                7:00 am
+            </div>
+            <div class="rest" style="grid-column: 2 / 7; grid-row: 4 / 5">
+                Tiempo libre
+            </div>
+        </div>
+        <div class="time" style="grid-column: 1 / 2; grid-row: 5 / 6;">8:00 am</div>
+        <div class="study" style="grid-column: 2 / 6; grid-row: 5 / 6;">Hora de trabajo</div>
+        <div class="study" style="grid-column: 6 / 7; grid-row: 5 / 6;">Hora de trabajo</div>
+        <div class="time" style="grid-column: 1 / 2; grid-row: 6 / 7;">9:00 am</div>
+        <div class="study" style="grid-column: 2 / 3; grid-row: 6 / 7;">HTML</div>
+        <div class="study" style="grid-column: 3 / 4; grid-row: 6 / 7;">CSS</div>
+        <div class="study" style="grid-column: 4 / 5; grid-row: 6 / 7;">JavaScript básico</div>
+        <div class="study" style="grid-column: 5 / 6; grid-row: 6 / 7;">Frameworks de Front End (React, Angular, Vue)</div>
+        <div class="rest" style="grid-column: 6 / 7; grid-row: 6 / 7;">Tiempo libre</div>
+        <div class="time" style="grid-column: 1 / 2; grid-row: 7 / 8;">10:00 am</div>
+        <div class="study" style="grid-column: 2 / 6; grid-row: 7 / 8;">Hora de trabajo</div>
+        <div class="study" style="grid-column: 6 / 7; grid-row: 7 / 8;">Hora de trabajo</div>
+        <div class="time" style="grid-column: 1 / 2; grid-row: 8 / 9;">11:00 am</div>
+        <div class="study" style="grid-column: 2 / 6; grid-row: 8 / 9;">Hora de trabajo</div>
+        <div class="study" style="grid-column: 6 / 7; grid-row: 8 / 9;">Hora de trabajo</div>
+        <div class="time" style="grid-column: 1 / 2; grid-row: 9 / 10;">12:00 pm</div>
+        <div class="study" style="grid-column: 2 / 6; grid-row: 9 / 10;">Hora de trabajo</div>
+        <div class="study" style="grid-column: 6 / 7; grid-row: 9 / 10;">Hora de trabajo</div>
+        <div class="time" style="grid-column: 1 / 2; grid-row: 10 / 11;">1:00 pm</div>
+        <div class="rest" style="grid-column: 2 / 7; grid-row: 10 / 11;">Almuerzo y descanso</div>
+        <div class="time" style="grid-column: 1 / 2; grid-row: 11 / 12;">2:00 pm</div>
+        <div class="study" style="grid-column: 2 / 3; grid-row: 11 / 12;">HTML</div>
+        <div class="study" style="grid-column: 3 / 4; grid-row: 11 / 12;">CSS</div>
+        <div class="study" style="grid-column: 4 / 5; grid-row: 11 / 12;">JavaScript avanzado</div>
+<div class="study" style="grid-column: 5 / 6; grid-row: 11 / 12;">Herramientas de construcción (Webpack, Babel, etc.)</div>
+<div class="rest" style="grid-column: 6 / 7; grid-row: 11 / 12;">Tiempo libre</div>
+<div class="time" style="grid-column: 1 / 2; grid-row: 12 / 13;">3:00 pm</div>
+<div class="study" style="grid-column: 2 / 6; grid-row: 12 / 13;">Hora de trabajo</div>
+<div class="study" style="grid-column: 6 / 7; grid-row: 12 / 13;">Hora de trabajo</div>
+<div class="time" style="grid-column: 1 / 2; grid-row: 13 / 14;">4:00 pm</div>
+<div class="study" style="grid-column: 2 / 6; grid-row: 13 / 14;">Hora de trabajo</div>
+<div class="study" style="grid-column: 6 / 7; grid-row: 13 / 14;">Hora de trabajo</div>
+<div class="time" style="grid-column: 1 / 2; grid-row: 14 / 15;">5:00 pm</div>
+<div class="study" style="grid-column: 2 / 6; grid-row: 14 / 15;">Hora de trabajo</div>
+<div class="study" style="grid-column: 6 / 7; grid-row: 14 / 15;">Hora de trabajo</div>
+<div class="time" style="grid-column: 1 / 2; grid-row: 15 / 16;">6:00 pm</div>
+<div class="rest" style="grid-column: 2 / 7; grid-row: 15 / 16;">Tiempo libre</div>
+
+        </div>
+    </body>
+</html>

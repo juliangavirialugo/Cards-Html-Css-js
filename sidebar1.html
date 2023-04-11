@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sidebar1</title>
+        <style>
+            body {
+                margin: 0;
+                background: #e5e6f7;
+                color: #595b78;
+                font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
+                    sans-serif;
+            }
+            .sidebar {
+                overflow:hidden;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 260px;
+                height: 100%;
+                padding-top: 20px;
+                
+                background: #ffffff;
+                -webkit-user-select: none;
+                user-select: none;
+            }
+            .handle {
+                position: absolute;
+                z-index: 100;
+                width: 8px;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                transition: 0.3s;
+            }
+            .handle:hover,
+            .handle:active {
+                background: #f7f7f7;
+                cursor: col-resize;
+            }
+            .sidebar  button{
+                position: relative;
+                display: flex;
+                gap: 16px;
+                align-items: center;
+                height: 50px;
+                width: 100%;
+                font-family: inherit;
+                font-size: 400;
+                line-height: 1;
+                padding: 0 16px;
+                background: transparent;
+                border: 0;
+                cursor: pointer;
+                text-align: left;
+                color: inherit;
+                white-space: nowrap;
+            }
+            .sidebar button:hover {
+                background: #4950f6;
+                color: #f7f7f7;
+                box-shadow: #595b78;
+            }
+      .icons,.icons2,.icons3 {
+                width: 18px;
+                height: 18px;
+                margin-right: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <aside id="sidebar" class="sidebar">
+            <div id="handle" class="handle"></div>
+            <button>
+                <span class="material-symbols-outlined"
+                    ><img class="icons" src="/icons/home.png" alt="home"
+                /></span>
+                <span>Home</span>
+            </button>
+            <button>
+                <span class="material-symbols-outlined"><span class="material-symbols-outlined"
+                    ><img class="icons2" src="/icons/reserve.png" alt="reserve"
+                /></span>
+                <span>Reserva</span>
+            </button>
+            <button>
+                <span class="material-symbols-outlined"><span class="material-symbols-outlined"
+                    ><img class="icons3" src="/icons/bed.png" alt="beds"
+                /></span>
+                <span>Habitaciones</span>
+            </button>
+        </aside>
+        <script src="main-sidebar1.js"></script>
+    </body>
+</html>
